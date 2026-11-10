@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.super-centered {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.super-centered > article {
+    resize: both;
+    overflow: auto;
+    border: 1px solid red;
+}
+
+.desc-pancake {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desc-pancake > * {
+    border: 1px solid green;
+    background-color: lightgreen;
+    flex: 1 1 150px;
+    min-height: 80px;
+}
+
+.sidebar-says {
+    display: grid;
+    grid-template-columns: minmax(100px, 20%) 1fr;
+}
+
+.sidebar-says > nav {
+    background-color: lightblue;
+}
+
+.sidebar-says > article {
+    background-color: lightgoldenrodyellow;
+}
